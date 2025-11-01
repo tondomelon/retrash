@@ -1,21 +1,105 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>static-site-boilerplate index</title>
-    <analytics></analytics>
+    <title>Retrash</title>
   </head>
 
   <body class="index">
-    <div class="images">
-      <div class="image" id="bgPNG"></div>
-      <div class="image" id="bgJPG"></div>
-      <div class="image" id="bgSVG"></div>
-      <img src="images/image.png" />
-      <img src="images/image.jpg" />
-      <img src="images/image.svg" />
-    </div>
+    <header class="header">
+      <div class="header__container">
+        <img class="header__container-logo" src="./images/logo.png" alt="Logo"/>
+        <ul class="header__container-menu">
+          <li class="header__container-list">Гикануться</li>
+          <li class="header__container-list">Поток</li>
+          <li class="header__container-list">Олдскул</li>
+          <li class="header__container-list">Барахолка</li>
+          <li class="header__container-list">Нит(а)кие</li>
+          <li class="header__container-list">О нас</li>
+          <li class="header__container-list">Обратная связь</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section1">
+        <div class="welcome">
+          <h1 class="welcome__title">Добро пожаловать!</h1>
+          <div class="welcome__img"></div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="about_us">
+          <div class="about_us__block">
+            <div class="about_us__text">
+              <h2 class="about_us__text-title">О нас</h2> 
+              <p class="about_us__text one">
+                Привет друг! Ты попал в&nbsp;место для вайба, где мы&nbsp;вспоминаем и&nbsp;представляем какого жилось подросткам и&nbsp;молодежи 2000-х! Этот вебак посвящен журнальным выпускам-лонгридам на разные тематики, поэтому устраивайся поудобнее и&nbsp;скорее читать новинки!
+              </p>
+            </div>
+            <p class="about_us__text two">
+              Наш проект созданот молодежи для молодежи. Возможно твое поколение не&nbsp;застало в&nbsp;осознанном возрасте происходящую культуру страших братьеви сестер, но&nbsp;ты&nbsp;точно ощущаешь “нотки” этого духа бунтарства, свободыи беззаботности. А&nbsp;мы&nbsp;в&nbsp;этом&nbsp;поможем!
+            </p>
+            <div class="about_us__text">
+              <h2 class="about_us__text-title">Как приступить?</h2>
+              <p class="about_us__text one">
+                Забегай в&nbsp;каталог, выбирай интересующую тебя тему и&nbsp;ищи&nbsp;свежие выпуски! В&nbsp;каждом журнале есть содержание, чтобы ты&nbsp;мог выбрать подтемы для&nbsp;себя!
+              </p>
+              <p class="about_us__text_catalogue">Каталог →</p>
+            </div>
+          </div>
+          <div class="about_us__img">
+            <img src="./images/two_girls.png" alt="Two girls"/>
+          </div>
+        </div>
+      </section>
+      <section class="section3">
+        <div class="form">
+          <div class="form__img">
+            <img src="./images/magazines.png" alt="Magazines"/>
+          </div>
+          <div class="form__text-block">
+            <h2 class="about_us__text-title">Присоединяйся!</h2>
+            <p>
+              Подпишись на нашу рассылку выпусков и&nbsp;не&nbsp;упускай из&nbsp;виду
+              интересующие тебя новинки и&nbsp;новости ;-)
+            </p>
+            <form
+              class="form__submit"
+              action="https://formspree.io/f/xrbykrrk"
+              method="POST"
+            >
+              <input type="text" name="message" placeholder="Ваше имя" />
+              <input type="email" name="email" placeholder="Ваш email" />
+              <p class="form__submit-p">
+                Нажимая кнопку «Отправить», я&nbsp;соглашаюсь с&nbsp;обработкой
+                персональных данных.
+              </p>
+              <div class="form__button"><button>Отправить</button></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <div>This is a landing page</div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container-part1">
+           <img class="header__container-logo" src="./images/logo.png" alt="Logo"/>
+          <ul class="footer__container-menu">
+            <li class="footer__container-list">О нас</li>
+            <li class="footer__container-list">Емаил</li>
+            <li class="footer__container-list">Термс оф сервайс</li>
+            <li class="footer__container-list">Телеграм</li>
+            <li class="footer__container-list">Обратная связь</li>
+          </ul>
+        </div>
+          <div class="footer__container-part2">
+            <p>
+              Копирайт. Какой год. кому принадлежат права. сайт техподдержки
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
