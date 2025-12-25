@@ -80,6 +80,16 @@ module.exports = {
       filename: './index.html'
     }),
 
+      new HtmlWebpackPlugin({
+      template: './src/styleguide.html',
+      filename: './styleguide.html'
+    }),
+
+      new HtmlWebpackPlugin({
+      template: './src/index.html',
+      filename: './index.html'
+    }),
+
     // Internal pages
     // new HtmlWebpackPlugin({
     //   hash: true,

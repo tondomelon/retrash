@@ -1,6 +1,12 @@
 @font-face {
-  font-family: 'CoFo Peshka';
-  src: url('../fonts/CoFoPeshka750-750Bold-Trial.otf'); 
-  font-style: normal;  
-} 
-
+    font-family: 'CoFo Peshka 750';
+    src: url('../fonts/CoFoPeshka750Trial-750Bold.eot');
+    src: url('../fonts/CoFoPeshka750Trial-750Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CoFoPeshka750Trial-750Bold.woff2') format('woff2'),
+        url('../fonts/CoFoPeshka750Trial-750Bold.woff') format('woff'),
+        url('../fonts/CoFoPeshka750Trial-750Bold.ttf') format('truetype'),
+        url('../fonts/CoFoPeshka750Trial-750Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
